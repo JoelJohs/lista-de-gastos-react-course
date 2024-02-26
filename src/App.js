@@ -7,6 +7,8 @@ import {
 } from "./elementos/Header";
 import Boton from "./elementos/Boton";
 import { Helmet } from "react-helmet";
+import BotonCerrarSesion from "./elementos/BotonCerrarSesion";
+import FormularioGasto from "./components/FormularioGasto";
 
 const App = () => {
   return (
@@ -20,10 +22,11 @@ const App = () => {
           <ContenedorBotones>
             <Boton to="/categorias">Categorias</Boton>
             <Boton to="/lista-de-gastos">Lista De Gastos</Boton>
-            <Boton to="/">X</Boton>
+            <BotonCerrarSesion />
           </ContenedorBotones>
         </ContenedorHeader>
       </Header>
+      <FormularioGasto />
     </>
   );
 };
